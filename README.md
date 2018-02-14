@@ -20,7 +20,7 @@ Welcome to PointSixSolutions (a JACL company). We created a simple challenge to 
 
 ## Challenge Part 1
  * Create a free Google Cloud account
- * Create a Google Cloud Function (HTTP) exposing a Fizz Buzz function
+ * Create a Google Cloud Function (HTTP) exposing a `fizzBuzz` function
    * accept number `max_range`
    * if `max_range` doesn't exist, default to `100`
    * if `max_range` is not a valid number, return `400` error with message
