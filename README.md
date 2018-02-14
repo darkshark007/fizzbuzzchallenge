@@ -13,6 +13,7 @@ Welcome to PointSixSolutions (a JACL company). We created a simple challenge to 
    * native mobile client apps
  * Cloud functions
    * Google Cloud Functions (later to migrate to OpenFAAS or similar)
+ * Cloud PubSub (later to migrate to Kafka or similar)
  * Cloud databases
    * Elasticsearch
    * Postgres
