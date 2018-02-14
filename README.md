@@ -41,9 +41,14 @@ Welcome to PointSixSolutions (a JACL company). We created a simple challenge to 
    * Include your client app source
    * Add a `function` folder and include the `index.js` and `package.json` source of your cloud function
 
+## BONUS (optional if you want to build JS client and know React)
+ * If you want to extend your client application to include a React UI, allowing user to input the `max_range` and view function response, feel free. 
+   * use `create-react-app` to bootstrap the app
+   * use `axios` as the HTTP client (Promise-based http client)
+
 ## Expectations
-After completing the challenge, please email your company contact with the URL to your Github repository. We expect to be able to clone your repo and build and run your client app in a Docker container. We expect the variable naming to match the specification above, and proper handling of error/edge conditions so your application is reliable.
+After completing the challenge, please email your company contact with the URL to your Github repository. We expect to be able to clone your repo and build and run your client app in a Docker container. The output would appear in `docker logs` after starting the container. We expect the variable naming to match the specification above, and proper handling of error/edge conditions so your application is reliable.
 
 If you are not well-versed with Docker, it's understandable if you need to get it installed and learn the basic commands. 
- * Part 1/2 should provide enough information to complete this challenge:
+ * Parts 1/2 below should provide enough information to complete this challenge:
    * https://docs.docker.com/get-started/
