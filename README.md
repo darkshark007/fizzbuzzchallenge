@@ -41,4 +41,4 @@ Welcome to PointSixSolutions (a JACL company). We created a simple challenge to 
    * Include your client app source
    * Add a `function` folder and include the `index.js` and `package.json` source of your cloud function
 
-After completing the challenge, please email your company contact with the URL to your Github repository.
+After completing the challenge, please email your company contact with the URL to your Github repository. We expect to be able to clone your repo and build and run your client app in a Docker container.
