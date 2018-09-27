@@ -6,6 +6,14 @@
  */
 exports.fizzbuzz = (req, res) => {
   
+  res.set('Access-Control-Allow-Origin', "*")
+  res.set('Access-Control-Allow-Methods', 'GET, POST')
+  //res.addHeader("Access-Control-Allow-Headers", "Content-Type");
+
+  // Should probably not do this in a real app.
+  headers = req.headers['access-control-request-headers']; 
+  if (headers) res.setHeader('Access-Control-Allow-Headers', headers); 
+  
   var range = req.body.max_range;
   
   if (range) {
