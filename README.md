@@ -19,6 +19,7 @@ Welcome to PointSixSolutions (a JACL company). We created a simple challenge to 
    * Postgres
    * Redis
 
+
 ## Challenge Part 1
  * Create a free Google Cloud account
  * Create a Google Cloud Function (HTTP) exposing a `fizzBuzz` function
@@ -28,6 +29,12 @@ Welcome to PointSixSolutions (a JACL company). We created a simple challenge to 
    * iterate from 0 to `max_range` and return output to client with `200` status
    * look up Fizz Buzz for output requirements
 
+```
+https://us-central1-seismic-glow-217720.cloudfunctions.net/fizzbuzz
+```
+
+
+
 ## Challenge Part 2
  * Create an API client in your favorite language
  * Package your client in a Docker container (build with Dockerfile)
@@ -35,6 +42,18 @@ Welcome to PointSixSolutions (a JACL company). We created a simple challenge to 
    * accept ENV override params for:
      * `FUNCTION_URL` (required)
      * `MAX_RANGE` (default 100 if doesn't exist)
+
+```
+Run w/ Go:
+  go run fizzbuzz.go
+
+Build with Docker:
+  docker build -t my-golang-app .
+
+Run w/ Docker:
+  docker run -e "FUNCTION_URL=https://us-central1-seismic-glow-217720.cloudfunctions.net/fizzbuzz" -e "MAX_RANGE=10" -it --rm --name my-running-app my-golang-app
+```
+
 
 ## Challenge Part 3
  * Create a Github repo with your client application and share link
