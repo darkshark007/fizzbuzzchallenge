@@ -17,7 +17,7 @@ class App extends Component {
     return (
       <div className="App">
         <p className="App-intro">
-          <input type="text" value={this.state.inputValue} onChange={updateHandler} />
+          Input fizzbuzz max_range: <input type="text" value={this.state.inputValue} onChange={updateHandler} />
           <br/><br/>fizzBuzzText for value ({this.state.inputValue}): <br/>{this.state.fizzBuzzText}
         </p>
       </div>
@@ -40,13 +40,13 @@ class App extends Component {
       },
     })
     .then(function (response) {
-      console.log(response);
+      // console.log(response);
       self.setState({
         fizzBuzzText: response.data
       })
     })
     .catch(function (error) {
-      console.log(error);
+      // console.log(error);
       self.setState({
         fizzBuzzText: "Error"
       })
